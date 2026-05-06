@@ -1,0 +1,20 @@
+figure {
+    width: 200px;
+}
+
+.alert::before {
+  content: "⚠ ";
+  color: red;
+  font-weight: bold;
+}
+
+.alert::after {
+  content: " Пожалуйста, проверьте данные.";
+  font-style: italic;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+

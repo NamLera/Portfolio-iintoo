@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    color: white;
+
+}
+body {
+    background-image: url(50+\ Best\ Dark\ Blue\ iPhone\ Wallpapers\ 2024\ \(Free\ 4k\ HD\ Download\).jpg);
+
+}
+.container {
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.container img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+.container img:hover {
+    width: 25%;
+}

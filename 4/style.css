@@ -1,0 +1,77 @@
+/* Выравниваем Email и Phone в одну линию */
+.input-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+/* Контейнер для поля ввода */
+.input-container {
+    position: relative; /* Чтобы заголовок был внутри */
+    flex: 1;
+    border: 1px solid #EEEEEE;
+    padding: 20px 10px 10px 10px;
+    background: #fff;
+}
+
+/* Заголовок (Email/Phone), который не перекрывает рамку */
+.input-container label {
+    position: absolute;
+    top: 18px; /* Центрируем по умолчанию */
+    left: 10px;
+    color: #AFAFAF;
+    font-size: 14px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+/* Анимация: когда кликаем в поле или там есть текст, поднимаем заголовок */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: 4px;
+    font-size: 11px;
+}
+
+.input-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+
+/* Контейнер для позиционирования */
+.investor-option {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Скрытая подсказка */
+.hint-box {
+    display: none; /* Скрыто по умолчанию */
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 250px;
+    background: #FFFFFF;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень как на макете */
+    color: #AFAFAF; /* Цвет из твоей палитры */
+    font-size: 14px;
+    z-index: 10;
+    border-radius: 4px;
+}
+
+/* ПОЯВЛЕНИЕ ПРИ НАВЕДЕНИИ на иконку */
+.info-icon:hover + .hint-box {
+    display: block;
+}
+
+/* Стили для самой иконки */
+.info-icon {
+    cursor: pointer;
+    color: #AFAFAF;
+    margin-left: 5px;
+    font-size: 14px;
+}

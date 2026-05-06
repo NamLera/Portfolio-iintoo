@@ -1,0 +1,283 @@
+body {
+    background-color: #EFF6FF;
+    font-family: 'Barlow', sans-serif;
+    color: var(--base-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@font-face {
+        font-family: 'Barlow';
+        src: url('Barlow-Regular.ttf') format('truetype');
+    }
+.card {
+    display: flex;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1000px;
+    min-height: 600px;
+    margin-top: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+
+}
+/* Левая часть */
+.left {
+    overflow: hidden; /* Чтобы картинка не вылезала за края, если она больше */
+    display: flex;
+}
+.logo-image {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+.image {
+    width: 100%;
+    height: 100%; 
+    object-fit: fill;
+    display: block;  
+}
+
+.logo {
+    position: absolute;
+    top: 40px;         /* Используй пиксели для более точного совпадения с макетом */
+    left: 40px;
+    width: 120px;
+    z-index: 10;       /* Чтобы логотип точно был поверх картинки */
+}
+
+
+/* Правая часть */
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 40px;
+    background: #FFFFFF;
+    color: #2A4A5C
+}
+
+.title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-top: 40px;
+}
+.subtitle {
+    color: #96A5B1;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+.investor-desc {
+    color: #96A5B1;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+/* Стили для формы */
+/* fb и in */
+.social-button {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.btn-social img {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+.btn-social {
+    display: flex;
+    flex: 1;
+    height: 40px;
+    font-size: 13px;
+    align-items: center;
+    padding: 12px;
+    border: none;
+    color: #FFFFFF;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-fb {
+    background-color: #255A9B;;
+}
+.btn-in {
+    background-color: #0076B6;
+}
+
+/* OR */
+.divider {
+    color: black;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 30px;
+    margin-block-start: 30px;
+    margin-inline-start: 90px;
+    margin-inline-end: 90px;
+}
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+
+ /* Выравниваем Email и Phone в одну линию */
+.input-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.input-container{
+    flex: 1;
+    border: 1px solid #EEEEEE; 
+    background: #FFFFFF;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    transition: border-color 0.2s;
+}
+
+.input-container label {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    color: #AFAFAF;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+.input-container:focus-within {
+    border-left: 2px solid #4A90E2;
+}
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: 4px;
+    font-size: 11px;
+}
+.input-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Radio-Button */
+.investor {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+.investor-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.info-box {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 250px;
+    background: #FFFFFF;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #AFAFAF;
+    font-size: 13px;
+    z-index: 100;
+    border-radius: 4px;
+}
+.info-icon:hover + .info-box {
+    display: block;
+}
+.info-icon {
+    cursor: pointer;
+    color: #AFAFAF;
+    margin-left: 5px;
+}
+
+input[type="radio"] {
+    appearance: none; /* Убираем стандартный кружок */
+    width: 15px;
+    height: 15px;
+    border: 2px solid #EEEEEE;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out; 
+    background-color: #3698FB;
+}
+
+input[type="radio"]:checked {
+    border: 4px solid #3698FB;
+    
+}
+
+.create {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.create input[type="checkbox"] {
+    accent-color: #3698FB;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+.create a {
+    color: #3698FB;
+    text-decoration: none;
+}
+
+
+.checkbox-agreement {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    color: #AFAFAF;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    
+}
+
+/* Button Create */
+.btn-submit {
+    width: 55%;             /* Растягиваем на всю ширину колонки */
+    background-color: #3698FB; /* Точный цвет с макета */
+    color: #FFFFFF;
+    border: none;
+    padding: 14px;           /* Делаем её высокой и удобной для клика */
+    border-radius: 4px;      /* Легкое закругление */
+    font-size: 15px;
+    font-weight: 500;        /* Не жирный, но четкий текст */
+    cursor: pointer;
+    margin-top: 30px;        /* Отступ от чекбокса выше */
+}
+
+.btn-submit:hover {
+    background-color: #2a7dd1; /* Темнеет при наведении */
+}
+

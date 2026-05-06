@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(163, 242, 163);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contract-form h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contract-form {
+  width: 300px;
+  background-color: white;
+  padding: 30px;
+  flex-direction: column;
+  margin: 0% auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+input, textarea, button {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+button {
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  border: none;
+  
+}

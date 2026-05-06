@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio iintoo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <!-- Левая часть -->
+    <section class="left">
+        <div class="logo-image">
+            <img src="logo.svg" alt="iintoo Logo" class="logo">
+            <img src="bg.jpg" alt="bg" class="image">
+        </div>
+    </section>
+    
+    <!-- Правая часть -->
+    <section class="right">
+        <form>
+          <h2 class="title">Get iintoo it today</h1>
+          <p class="subtitle">There is no charge or obligation upon registration.</p>
+
+          <!-- Кнопки социальных сетей -->
+          <div class="social-button">
+            <button type="button" class="btn-social btn-fb">
+              <img src="facebook.svg" alt=""> Register with Facebook
+            </button>
+            <button type="button" class="btn-social btn-in">
+              <img src="linkedin.svg" alt=""> Register with LinkedIn
+            </button>
+          </div>
+
+          <div class="divider">
+            <span>OR</span>
+          </div>
+          
+          <!--Email и Phone в одной строке-->
+          <div class="input-row">
+            <div class="input-container">
+              <input type="email" placeholder=" " id="email" required>  
+              <label for="email">Email</label> 
+            </div>
+
+            <div class="input-container">
+              <input type="tel" placeholder=" " id="phone">
+              <label for="phone">Phone</label>
+            </div>
+          </div>
+
+          <h3 class="title">What type of investor are you?</h3>
+          <p class="investor-desc">Select the type of investor you are below</p>
+
+          <!--Radio-Button-->
+          <div class="investor">
+            <div class="investor-item">
+              <input type="radio" id="ind" name="investor-type" checked>
+              <label for="ind">Individual</label>
+              <span class="info-icon">ⓘ</span>
+              <div class="info-box">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common</div>
+            </div>
+            <div class="investor-item">
+              <input type="radio" id="business" name="investor-type">
+              <label for="business">Business</label>
+              <span class="info-icon">ⓘ</span>
+              <div class="info-box">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common</div>
+            </div> 
+            <div class="investor-item">
+              <input type="radio" id="ira" name="investor-type">
+              <label for="ira">IRA</label>
+              <span class="info-icon">ⓘ</span>
+              <div class="info-box">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common</div>
+            </div>
+            <div class="investor-item">
+              <input type="radio" id="trust" name="investor-type">
+              <label for="trust">Trust</label>
+              <span class="info-icon">ⓘ</span>
+              <div class="info-box">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common</div>
+            </div>
+          </div>
+
+
+
+            <div class="create">
+              <label class="checkbox-agreement">
+              <input type="checkbox">
+              <span>I agree to the terms and receiving notifications from iintoo <a href="#">View full terms</a></span>
+              </label>
+              </div>
+          
+          <button type="submit" class="btn-submit">Create Account</button>
+        </form>
+    </section>
+  </div>
+</body>
+</html>

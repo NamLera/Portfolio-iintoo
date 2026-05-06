@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(209, 236, 252);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Навигация */
+.navigator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Logo */
+.logo img {
+    width: 45px;
+    height: auto;
+}
+
+/* Ссылки навигации */
+nav {
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgb(86, 166, 212)
+}
+.nav-link {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+.nav-link a {
+    color: #4a90e2;
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+
+/* Социальные иконки */
+.social-icons a i {
+    color: #4a90e2; 
+    font-size: 20px; 
+}
+
+/* Главный */
+.nam {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+.name {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: rgb(49, 166, 255);
+}
+ 
+/* Кнопка "Hire Me" */
+.hire {
+    color: rgb(255, 255, 255);
+    background-color: rgb(76, 148, 242);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Изображение */
+.nam-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
