@@ -4,7 +4,7 @@ h1 {
 
 }
 body {
-    background-image: url(50+\ Best\ Dark\ Blue\ iPhone\ Wallpapers\ 2024\ \(Free\ 4k\ HD\ Download\).jpg);
+    background-color: rgb(144, 0, 0);
 
 }
 .container {
@@ -23,4 +23,10 @@ body {
 }
 .container img:hover {
     width: 25%;
+}
+
+.inbox .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
 }

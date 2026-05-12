@@ -24,7 +24,7 @@ body {
 }
 /* Левая часть */
 .left {
-    overflow: hidden; /* Чтобы картинка не вылезала за края, если она больше */
+    overflow: hidden;
     display: flex;
 }
 .logo-image {
@@ -41,10 +41,10 @@ body {
 
 .logo {
     position: absolute;
-    top: 40px;         /* Используй пиксели для более точного совпадения с макетом */
+    top: 40px;         
     left: 40px;
     width: 120px;
-    z-index: 10;       /* Чтобы логотип точно был поверх картинки */
+    z-index: 10;
 }
 
 
@@ -55,13 +55,12 @@ body {
     flex-direction: column;
     padding: 25px 40px;
     background: #FFFFFF;
-    color: #2A4A5C
+    color: #2A4A5C;
 }
 
 .title {
     margin-bottom: 10px;
     font-weight: 500;
-    font-top: 40px;
 }
 .subtitle {
     color: #96A5B1;
@@ -76,6 +75,7 @@ body {
 }
 
 /* Стили для формы */
+
 /* fb и in */
 .social-button {
     display: flex;
@@ -208,7 +208,7 @@ body {
 }
 
 input[type="radio"] {
-    appearance: none; /* Убираем стандартный кружок */
+    appearance: none;
     width: 15px;
     height: 15px;
     border: 2px solid #EEEEEE;
@@ -220,7 +220,6 @@ input[type="radio"] {
 }
 
 input[type="radio"]::before {
-    content: "";
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -265,19 +264,19 @@ input[type="radio"]:checked {
 
 /* Button Create */
 .btn-submit {
-    width: 55%;             /* Растягиваем на всю ширину колонки */
-    background-color: #3698FB; /* Точный цвет с макета */
+    width: 55%;            
+    background-color: #3698FB; 
     color: #FFFFFF;
     border: none;
-    padding: 14px;           /* Делаем её высокой и удобной для клика */
-    border-radius: 4px;      /* Легкое закругление */
+    padding: 14px;          
     font-size: 15px;
-    font-weight: 500;        /* Не жирный, но четкий текст */
+    font-weight: 500;
     cursor: pointer;
-    margin-top: 30px;        /* Отступ от чекбокса выше */
+    margin-top: 30px;
+    border-radius: 5px;      
 }
 
 .btn-submit:hover {
-    background-color: #2a7dd1; /* Темнеет при наведении */
+    background-color: #2a7dd1;
 }
 
