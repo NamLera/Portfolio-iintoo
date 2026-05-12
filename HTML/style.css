@@ -1,3 +1,5 @@
+
+
 figure {
     width: 200px;
 }
@@ -18,3 +20,106 @@ input::placeholder {
 }
 
 
+
+.inline-Block {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 3px solid green;
+  background-color: lightgreen;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.block {
+  display: block;
+  box-sizing: border-box;
+  border: 3px solid red;
+  background-color: lightcoral;
+  width: 200px;
+  height: 100px;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.none {
+  display: none;
+  border: 3px solid blue;
+  background-color: lightskyblue;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.inline {
+  display: inline;
+  box-sizing: border-box;
+  border: 3px solid purple;
+  background-color: lightpink;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  border: 3px solid blue;
+  background-color: lightsalmon;
+  width: 200px;
+  height: 100px;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inlineFlex {
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 3px solid purple;
+  background-color: lightgoldenrodyellow;
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  color: black;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flexbox */
+p {
+  padding-top: 40px;
+  margin: 0;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  }
+
+.inner-div {
+  height: 200px;
+  width: 400px;
+  margin: 10px;
+  background-color: #096eeb;
+}
+.container {
+    display: flex;
+}
+
+
+.scroll-box {
+  width: 300px;
+  height: 150px; /* Фиксированная высота */
+  border: 2px solid #333;
+  
+  /* Магия здесь: */
+  overflow-y: auto;   /* Вертикальный скролл появится сам при необходимости */
+  overflow-x: hidden; /* Горизонтальный скролл запрещен полностью */
+  
+  padding: 15px;
+  background-color: #f9f9f9;
+}
