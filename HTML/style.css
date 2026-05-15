@@ -123,3 +123,40 @@ p {
   padding: 15px;
   background-color: #f9f9f9;
 }
+
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px 100px 300px 300px;
+  gap: 10px;
+  padding: 20px;
+}
+.section {
+  background-color: #8dc5e2;
+  border: 2px solid #333;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;;
+}
+.header {
+  grid-column: 1/4;
+}
+.navigation-menu {
+  grid-column: 1/4;
+}
+.left {
+  grid-column: 1/2;
+}
+
+.right {
+  grid-column: 3/4;
+}
+.main {
+  grid-column: 2/3;
+}
+.footer {
+  grid-column: 1/4;
+}
