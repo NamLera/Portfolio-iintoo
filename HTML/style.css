@@ -1,5 +1,5 @@
 
-
+/*
 figure {
     width: 200px;
 }
@@ -91,7 +91,7 @@ input::placeholder {
 }
 
 /* Flexbox */
-p {
+/*p {
   padding-top: 40px;
   margin: 0;
   font-size: 20px;
@@ -113,16 +113,15 @@ p {
 
 .scroll-box {
   width: 300px;
-  height: 150px; /* Фиксированная высота */
+  height: 150px; 
   border: 2px solid #333;
   
-  /* Магия здесь: */
-  overflow-y: auto;   /* Вертикальный скролл появится сам при необходимости */
-  overflow-x: hidden; /* Горизонтальный скролл запрещен полностью */
+  overflow-y: auto;   
+  overflow-x: hidden; 
   
   padding: 15px;
   background-color: #f9f9f9;
-}
+} */
 
 
 .main-container {
