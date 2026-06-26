@@ -1,0 +1,62 @@
+@use "sass:color";
+
+$primary-color: rgb(64, 106, 234);
+$primary-hover: rgb(0, 0, 83);
+$swiper-bg: rgb(178, 224, 239);
+
+$border-radius: 8px;
+$swiper-radius: 10px;
+$bth-padding: 10px 20px;
+$swiper-margin: 20px 0;
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin swiper-slide-styles{
+@include flex-center;
+    background-color: $swiper-bg;
+    border-radius: $swiper-radius;
+    color: white;
+}
+
+@mixin button-styles {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius;
+    padding: $bth-padding;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-hover;
+    }
+}
+
+
+
+.buttonClass {
+    @include button-styles;
+}
+
+
+.swiper{
+    width: 100%;
+    height: 200px;
+    margin: $swiper-margin;
+
+    &-wrapper{
+        border-radius: $swiper-radius;
+    }
+
+    &-slide{
+        @include swiper-slide-styles;
+    }
+
+    &-button-prev, &-button-next{
+        color: #FFFF;
+    }
+}
